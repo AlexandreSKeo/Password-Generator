@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div id="main-section">
+        <h1>Generate a <span class="green-text">random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <div class="separator">
+          <button class="green-btn" id="generate-btn" onclick="displayField()">
+            Generate Password
+          </button>
+          <button class="green-btn" id="toggle-btn" onclick="toggle()">
+            Symbol/Number
+          </button>
+        </div>
+        <div class="separator">
+          <button
+            class="green-btn"
+            id="set-length-btn"
+            onclick="setPasswordLength()"
+          >
+            Set password length
+          </button>
+          <input type="number" id="password-length-input" min="1" value="15" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="answer-section">
+        <div
+          class="answer-field"
+          id="result-1"
+          onclick="copy('result-1')"
+        ></div>
+        <div
+          class="answer-field"
+          id="result-2"
+          onclick="copy('result-2')"
+        ></div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
